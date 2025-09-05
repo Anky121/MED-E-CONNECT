@@ -6,12 +6,13 @@ import Footer from './components/common/Footer'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import DoctorDashboard from './pages/DoctorDashboard'
-import PatientDashboard from './pages/PatientDashboard'
-import AdminDashboard from './pages/AdminDashboard'
+import DoctorList from './pages/DoctorList'
+// import DoctorDashboard from './pages/DoctorDashboard'
+// import PatientDashboard from './pages/PatientDashboard'
+// import AdminDashboard from './pages/AdminDashboard'
 import Consultation from './pages/Consultation'
 import Appointment from './pages/Appointment'
-import DoctorList from './pages/DoctorList'
+
 import ProtectedRoute from './components/common/ProtectedRoute'
 
 function App() {
@@ -25,30 +26,34 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/doctors" element={<DoctorList />} />
-            <Route 
-              path="/patient-dashboard" 
+
+            {/* <Route 
+              path="/patientdashboard" 
               element={
                 <ProtectedRoute role="patient">
                   <PatientDashboard />
                 </ProtectedRoute>
               } 
-            />
-            <Route 
-              path="/doctor-dashboard" 
+            /> */}
+
+            {/* <Route 
+              path="/doctordashboard" 
               element={
                 <ProtectedRoute role="doctor">
                   <DoctorDashboard />
                 </ProtectedRoute>
               } 
-            />
-            <Route 
+            /> */}
+
+            {/* <Route 
               path="/admin-dashboard" 
               element={
                 <ProtectedRoute role="admin">
                   <AdminDashboard />
                 </ProtectedRoute>
               } 
-            />
+            /> */}
+
             <Route 
               path="/appointment" 
               element={
@@ -57,6 +62,7 @@ function App() {
                 </ProtectedRoute>
               } 
             />
+
             <Route 
               path="/consultation/:appointmentId" 
               element={
@@ -65,6 +71,7 @@ function App() {
                 </ProtectedRoute>
               } 
             />
+
           </Routes>
           <Footer />
         </div>

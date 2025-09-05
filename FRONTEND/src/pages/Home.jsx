@@ -94,9 +94,9 @@ const Home = () => {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl p-8">
                 <img 
-                  src="/api/placeholder/500/400" 
+                  src="\photos\Doctor2.png" 
                   alt="Doctor consultation" 
-                  className="w-full h-80 object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </div>

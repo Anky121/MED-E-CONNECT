@@ -17,11 +17,11 @@ const Navbar = () => {
   const getDashboardRoute = () => {
     switch (user?.role) {
       case 'doctor':
-        return '/doctor-dashboard'
+        return '/DoctorDashboard'
       case 'admin':
-        return '/admin-dashboard'
+        return '/AdminDashboard'
       default:
-        return '/patient-dashboard'
+        return '/PatientDashboard'
     }
   }
 

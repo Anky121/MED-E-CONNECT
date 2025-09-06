@@ -68,7 +68,7 @@ const Consultation = () => {
     setIsCallActive(false)
     setCallDuration(0)
     // Navigate to appointment summary or dashboard
-    navigate('/patient-dashboard')
+    navigate('/PatientDashboard')
   }
 
   const handleSendMessage = (e) => {
@@ -103,7 +103,7 @@ const Consultation = () => {
         <div className="text-white text-center">
           <h1 className="text-2xl font-bold mb-4">Consultation Not Found</h1>
           <button
-            onClick={() => navigate('/patient-dashboard')}
+            onClick={() => navigate('/PatientDashboard')}
             className="bg-primary-600 hover:bg-primary-700 px-6 py-2 rounded-lg"
           >
             Back to Dashboard

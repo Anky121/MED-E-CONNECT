@@ -128,6 +128,7 @@ const Register = () => {
             )}
 
             {/* Role Selection */}
+            {/* patient */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-3">
                 I am a:
@@ -144,6 +145,8 @@ const Register = () => {
                   />
                   <span className="ml-2 text-sm text-gray-700">Patient</span>
                 </label>
+
+                {/* doctor */}
                 <label className="flex items-center">
                   <input
                     type="radio"

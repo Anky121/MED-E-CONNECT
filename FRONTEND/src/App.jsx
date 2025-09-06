@@ -7,9 +7,9 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import DoctorList from './pages/DoctorList'
-// import DoctorDashboard from './pages/DoctorDashboard'
-// import PatientDashboard from './pages/PatientDashboard'
-// import AdminDashboard from './pages/AdminDashboard'
+import DoctorDashboard from './pages/DoctorDashboard'
+import PatientDashboard from './pages/PatientDashboard'
+import AdminDashboard from './pages/AdminDashboard'
 import Consultation from './pages/Consultation'
 import Appointment from './pages/Appointment'
 
@@ -27,32 +27,32 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/doctors" element={<DoctorList />} />
 
-            {/* <Route 
-              path="/patientdashboard" 
+            <Route 
+              path="/PatientDashboard" 
               element={
                 <ProtectedRoute role="patient">
                   <PatientDashboard />
                 </ProtectedRoute>
               } 
-            /> */}
+            /> 
 
-            {/* <Route 
-              path="/doctordashboard" 
+            <Route 
+              path="/DoctorDashboard" 
               element={
                 <ProtectedRoute role="doctor">
                   <DoctorDashboard />
                 </ProtectedRoute>
               } 
-            /> */}
+            />
 
-            {/* <Route 
-              path="/admin-dashboard" 
+             <Route 
+              path="/AdminDashboard" 
               element={
                 <ProtectedRoute role="admin">
                   <AdminDashboard />
                 </ProtectedRoute>
               } 
-            /> */}
+            />
 
             <Route 
               path="/appointment" 
